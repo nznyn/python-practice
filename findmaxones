@@ -1,0 +1,7 @@
+
+def findMaxOnes(str):
+  newstr = str.split('0')
+  size = max(newstr, key = len)
+  return len(size)
+
+print(findMaxOnes('111100111011'))
