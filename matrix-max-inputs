@@ -1,0 +1,18 @@
+#Function f(x) finds max value and location
+#of the highest value in 3D array.
+
+import numpy as np
+x = np.arange(1000).reshape(10, 10, 10)
+
+i = int(input("enter i (integer between 0 and 9): "))
+j = int(input("enter j (integer between 0 and 9): "))
+k = int(input("enter k (integer between 0 and 9): "))
+
+value = int(input("enter any number: "))
+x[i][j][k] = value
+
+def f(x):
+  print(np.amax(x))
+  print(np.where(x == np.amax(x)))
+
+f(x)
