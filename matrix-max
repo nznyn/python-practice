@@ -1,0 +1,13 @@
+#program finds max element in 3D array and its position
+#uses numpy library
+
+import numpy as np
+
+def f(x):
+  print(np.amax(x))
+  print(np.where(x == np.amax(x)))
+
+x = np.arange(27).reshape(3, 3, 3)
+x[2][0][1] = 10
+
+f(x)
